@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Ç, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: salmon;
+        }
+        .color:hover{
+            color: gold;
+            background-color: grey;
+            font-size: 40px;
+        }
+        input:focus{
+            font-weight: 700;
+            font-size: 30px;
+            color: hotpink;
+        }
+        li:first-child{
+            color: rebeccapurple;
+            background-color: dodgerblue;
+        }
+        li:last-child{
+            color: sienna;
+            background-color: silver;
+        }
+        li:nth-child(2n+1){
+            color: skyblue;
+        }
+        a:visited{
+            color: tomato;
+        }
+        h1::before{
+            content: "Hello";
+            color: teal;
+            background-color: violet;
+            font-size: 10px;
+        }
+        body{
+            counter-reset: section;
+        }
+        li::before{
+            counter-increment: section;
+            content: "Section" counter(section)": ";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="color">Vodro Class</h1>
+    
+    <input  name="email" type="text">
+    <br>
+    <input name="password" type="text">
+    <ul>
+
+        
+        
+        <li>alo</li>
+        <li>potol</li>
+        <li>tomato</li>
+        <li>kola</li>
+        <li>bagon</li>
+        <li>loibba</li>
+        <li>jingga</li>
+
+    </ul>
+    <a href="www.youtube.com">Youtube</a>
+    <br>
+    <a href="www.facebook.com">Facebook</a>
+
+</body>
+</html>
